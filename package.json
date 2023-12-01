@@ -1,0 +1,15 @@
+{
+  "name": "cordova-plugin-manage-external-storage",
+  "version": "0.0.1",
+  "description": "Android 13 MANAGE_EXTERNAL_STORAGE permissions check.",
+  "cordova": {
+    "id": "cordova-plugin-manage-external-storage",
+    "platforms": ["android"]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Henrique Soares da Graça",
+  "license": "Apache 2.0"
+}

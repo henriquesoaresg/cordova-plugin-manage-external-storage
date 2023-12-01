@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-manage-external-storage"
+        version="0.0.1">
+
+    <name>Manage External Storage Permission</name>
+
+    <engines>
+        <engine name="cordova" version=">=5.0.0"/>
+    </engines>
+
+    <platform name="android">
+        <js-module src="www/manageExternalStorage.js" name="js/manageExternalStorage">
+            <clobbers target="cordova.plugins.manageexternalstorage" />
+        </js-module>
+
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="ManageExternalStorage">
+                <param name="android-package" value="br.com.rickdev.ManageExternalStorage" />
+            </feature>
+        </config-file>
+        
+        <source-file src="src/android/ManageExternalStorage.java" target-dir="src/br/com/rickdev" />
+    </platform>
+</plugin>
